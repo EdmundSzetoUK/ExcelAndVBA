@@ -3,11 +3,6 @@
 # Excel And Excel VBA
 This knowledge of Excel and Excel VBA sharing from my working experience. 
 
-**Table of Contents**
-
-[TOC]
-
-
 ## Download Email Attachment
 ### Objective
 The DownloadEmailAttachment function to scraping and cleaning data. 
