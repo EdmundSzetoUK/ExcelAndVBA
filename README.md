@@ -1,4 +1,4 @@
-<img align="center" src="/image/COVER_v2.png" alt="Banner" />
+<img align="center" src="/image/VBA-Banner.jpg" alt="Banner" />
 
 # Excel And Excel VBA
 This knowledge of Excel and Excel VBA sharing from my working experience. 
