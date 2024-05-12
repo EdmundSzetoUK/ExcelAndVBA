@@ -34,7 +34,7 @@ Sub CopyPasteRawData()
             .Title = "Select a File to Attach"
             .Filters.Add "All excel", "*.xlsx", 1
             .AllowMultiSelect = False
-            .InitialFileName = "Negative Report*.*"
+            .InitialFileName = "The Report*.*"
             If .Show = -1 Then
                 strFilePath = .SelectedItems(1)
             Else
@@ -57,7 +57,7 @@ Sub CopyPasteRawData()
     
     ' Add Filter
     Selection.AutoFilter
-    ' Filter by the DWH_IM_BRANCH_ID < 100
+    ' Filter by the ID < 100
     ActiveSheet.Range("$A$1:$M$" & lRow).AutoFilter Field:=1, Criteria1:="<100", Operator:=xlAnd
 
     ' Select all Filtered Data and Copy
@@ -66,7 +66,7 @@ Sub CopyPasteRawData()
     Selection.Copy
     
     '---------------------------------------------
-    ' Paste the raw data to the Negative report
+    ' Paste the raw data to the report
     
     ' Goto Negative Report
     Workbooks(strReportName).Worksheets(strWsName).Activate
@@ -78,7 +78,7 @@ Sub CopyPasteRawData()
     '---------------------------------------------
     ' Clean up the objects
     Set oFso = Nothing
-    ' Close negative raw data file
+    ' Close raw data file
     Application.DisplayAlerts = False
     Workbooks(strFileName).Close SaveChanges:=False
     Application.DisplayAlerts = True
